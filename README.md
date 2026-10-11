@@ -44,6 +44,11 @@ On Windows, start terminal as administrator.
 uv run effusive
 ```
 
+On first launch, open the **System** panel and set the **MATLAB**, **Vantage**, and
+**EchoFrame** paths. The EchoFrame path must point to the directory containing the
+built `echoframe_mex.*` file, not just its repository root. These settings are saved
+automatically; you do not need to configure environment variables.
+
 Then click the play button in the napari sidebar. The UI stays in `Starting...`
 until the first frame arrives from MATLAB.
 
@@ -55,3 +60,6 @@ Defaults ship in `src/effusive/default_config.toml`. User settings persist in
 
 Config covers probe defaults, acquisition settings, storage path,
 simulate mode, z-stack defaults, BIDS-like metadata, and the last crop ROI.
+
+See [the configuration guide](https://sdiebolt.github.io/effusive/user-guide/configuration/)
+for more about system paths and saved settings.

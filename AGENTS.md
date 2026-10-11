@@ -28,8 +28,7 @@ Uses [uv](https://docs.astral.sh/uv/) and [just](https://github.com/casey/just).
 
 ```bash
 uv sync                              # install dependencies
-cp .env.template .env                # then set machine-specific paths
-uv run --env-file .env effusive      # launch the application
+uv run effusive                     # launch; set paths in the System panel
 just test                            # run tests with pytest --mpl
 just test-verbose                    # run tests verbosely
 just pre-commit                      # ruff, ty, codespell, docstring checks
@@ -37,9 +36,15 @@ just docs                            # build docs (Zensical)
 just serve-docs                      # serve docs locally
 ```
 
-Effusive also needs `ECHOFRAME_MEX_ROOT`, the directory containing the built
-`echoframe_mex` MEX file. Build EchoFrame in its own checkout, following its README.
-Use a prebuilt MEX matching the installed CUDA/MATLAB versions or build it there.
+Set the MATLAB, Vantage, and EchoFrame MEX directory paths in the System panel;
+they persist in the user configuration. No environment file is needed. The worker
+still supports `MATLAB_ROOT`, `VERASONICS_VPF_ROOT`, and `ECHOFRAME_MEX_ROOT` as
+fallbacks for empty saved paths, but the recommended setup is through the GUI.
+
+The EchoFrame path must contain the built `echoframe_mex` MEX file. Build EchoFrame
+in its own checkout, following its README. Use a prebuilt MEX matching the installed
+CUDA/MATLAB versions or build it there. The repository root is detected automatically;
+users do not need to set `EFFUSIVE_PATH`.
 
 There is no automated hardware test suite. For acquisition changes, run the relevant
 hardware smoke flows: run/stop, freeze/resume, recording, crop, and z-stack.

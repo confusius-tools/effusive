@@ -34,9 +34,9 @@ This working plan lives outside `docs/` and is not part of the documentation sit
 ### 2. Installation and configuration
 
 - [ ] Verify setup instructions against the current worker and application entry point.
-- [ ] Document the EchoFrame MEX requirement (`ECHOFRAME_MEX_ROOT`), Vantage and MATLAB
-  roots; correct `.env.template` without assuming unsupported defaults.
-- [ ] Replace stale manual `EFFUSIVE_PATH` instructions with automatic root detection.
+- [x] Document GUI-first setup for MATLAB, Vantage, and the EchoFrame MEX directory;
+  remove the unnecessary environment-file template and setup instructions.
+- [x] Explain automatic repository-root detection without asking users to configure it.
 - [ ] Standardize the EchoFrame repository link.
 - [ ] Fill installation and configuration guides, and align the README quick start.
 
@@ -88,4 +88,8 @@ its workflow has been verified. Record validation and deferred work below.
   heading to avoid acronym markup and a visible title permalink; simplify the copy
   and remove the ConfUSIus section. Interface guidance
   now lives in the User Guide; the separate GUI overview placeholder was removed.
-- Next: step 2, installation/configuration and environment-template corrections.
+- First presentation commit pushed to `origin/main`: `70bee32`.
+- Step 2 started: documented System-panel path setup and saved settings, updated
+  README/agent instructions, and removed `.env.template`. Existing environment
+  fallbacks and the internal MATLAB `EFFUSIVE_PATH` contract remain unchanged.
+- Installation guidance and acquisition-setting details are still unfinished.
