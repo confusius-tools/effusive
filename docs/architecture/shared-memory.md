@@ -4,7 +4,7 @@ icon: lucide/memory-stick
 
 # Shared Memory Protocol
 
-Effusive uses Python's `multiprocessing.shared_memory` transport to exchange images,
+EffUSIve uses Python's `multiprocessing.shared_memory` transport to exchange images,
 metadata, commands, and status between the Python napari process and the MATLAB worker
 subprocess. Each acquisition run gets its own uniquely named segment set (for example
 `cf_meta_<run_token>`), created by Python before the worker launches, zero-initialised,

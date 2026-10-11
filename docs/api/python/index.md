@@ -4,7 +4,7 @@ icon: lucide/code
 
 # Python API Reference
 
-Reference documentation for the Effusive Python package.
+Reference documentation for the EffUSIve Python package.
 
 <div class="grid cards" markdown>
 

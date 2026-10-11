@@ -42,7 +42,7 @@ Message verbs are intentionally consistent:
 
 ### Freeze latch invariant
 
-Effusive uses VSX's built-in freeze loop. Entering freeze sets the base-workspace `freeze` variable, which makes `VSX.m` issue `stopSequence`, and also sets the hidden `Freeze` togglebutton that VSX later waits on before issuing `startSequence`. Resuming clears both latches together. Any MATLAB-side freeze transition must keep these two states synchronized exactly like a manual pause.
+EffUSIve uses VSX's built-in freeze loop. Entering freeze sets the base-workspace `freeze` variable, which makes `VSX.m` issue `stopSequence`, and also sets the hidden `Freeze` togglebutton that VSX later waits on before issuing `startSequence`. Resuming clears both latches together. Any MATLAB-side freeze transition must keep these two states synchronized exactly like a manual pause.
 
 ## Live vs startup-only controls
 

@@ -4,19 +4,28 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22555686-8b7ff7?style=flat-square)](https://doi.org/10.5281/zenodo.22555686)
 [![Discord](https://img.shields.io/badge/Discord-join-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/mZd87tgmy2)
 
-# Effusive
+# EffUSIve
 
 > [!WARNING]
-> **Alpha status** — Effusive is in alpha and under active development. Use it at your
+> **Alpha status** — EffUSIve is in alpha and under active development. Use it at your
 > own risk, especially on acquisition hardware. If you want to start experimenting with
 > it, please contact the maintainers.
 
-Effusive is an open-source acquisition and control application for functional ultrasound
-imaging (fUSI) on Verasonics Vantage systems. It provides a napari-based interface for
+EffUSIve is an acquisition and control application for functional ultrasound
+imaging (fUSI) on Verasonics Vantage systems. It provides a [napari](https://napari.org/)-based interface for
 configuring acquisitions, visualizing B-mode and power Doppler images in real time, and
-recording fUSI data. Effusive builds on
+recording fUSI data. EffUSIve builds on
 [EchoFrame](https://github.com/BrainEchoLab/EchoFrame) for high-performance ultrasound
 beamforming and acquisition.
+
+## Documentation
+
+The [EffUSIve documentation](https://sdiebolt.github.io/effusive/) is currently being
+built. Architecture and API references are available; operator guides and interface
+walkthroughs are marked as under construction.
+
+For post-acquisition exploration and analysis, see the companion project
+[ConfUSIus](https://confusius.tools/).
 
 ## Requirements
 

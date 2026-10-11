@@ -4,7 +4,7 @@ icon: lucide/book-open
 
 # API Reference
 
-Complete reference documentation for the Effusive API.
+Complete reference documentation for the EffUSIve API.
 
 ## MATLAB API
 

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap");
+
+/* Keep the gold accent until the EffUSIve logo palette is available. */
 /* Light mode: medium gold — brighter than dark gold, still readable on white. */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #c49a0a;
@@ -5,8 +8,13 @@
   --md-primary-fg-color--dark: #a57e08;
   --md-accent-fg-color: #c49a0a;
   --md-accent-fg-color--transparent: #c49a0a1a;
-  --md-accent-bg-color: #c49a0a;
-  --md-accent-bg-color--light: #ffd33d;
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.7);
+  --md-default-bg-color: #f8f9fb;
+  --md-default-bg-color--light: #f8f9fb;
+  --md-default-bg-color--lighter: #edf0f5;
+  --md-default-bg-color--lightest: #e3e7f0;
+  --md-code-bg-color: #e3e7f0;
 }
 
 /* Dark mode: bright yellow pops on the dark slate background. */
@@ -16,8 +24,61 @@
   --md-primary-fg-color--dark: #a57e08;
   --md-accent-fg-color: #ffd33d;
   --md-accent-fg-color--transparent: #ffd33d1a;
-  --md-accent-bg-color: #ffd33d;
-  --md-accent-bg-color--light: #fff3b0;
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.7);
+  --md-default-bg-color: #090c10;
+  --md-default-bg-color--light: #090c10;
+  --md-default-bg-color--lighter: #111720;
+  --md-default-bg-color--lightest: #1a2030;
+  --md-code-bg-color: #111720;
+}
+
+.md-header {
+  background-color: var(--md-default-bg-color);
+}
+
+.md-header__title,
+.md-header__title .md-header__topic {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.fusi-accent {
+  color: var(--md-primary-fg-color);
+}
+
+/* Keep the page heading accessible without duplicating the visible wordmark. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero-banner {
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+}
+
+.md-typeset .hero-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.5rem, 10.5vw, 5.1rem);
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 auto 0.5rem;
+}
+
+.md-typeset .hero-tagline {
+  font-size: 1.1rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 38rem;
+  margin: 0 auto;
 }
 
 .md-typeset a {

@@ -1,9 +1,9 @@
 [project]
-site_name = "Effusive"
+site_name = "EffUSIve"
 site_url = "https://sdiebolt.github.io/effusive/"
 site_description = "Acquisition and control application for functional ultrasound imaging data."
 site_author = "Samuel Le Meur-Diebolt"
-copyright = "Copyright © 2026 The Effusive developers"
+copyright = "Copyright © 2026 The EffUSIve developers"
 docs_dir = "docs"
 site_dir = "site"
 repo_url = "https://github.com/sdiebolt/effusive"
@@ -11,6 +11,7 @@ repo_name = "sdiebolt/effusive"
 edit_uri = "edit/main/docs/"
 extra_css = ["stylesheets/extra.css"]
 extra_javascript = [
+    "javascripts/theme.js",
     "javascripts/mathjax.js",
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
     "javascripts/mermaid.mjs",
@@ -18,6 +19,18 @@ extra_javascript = [
 ]
 nav = [
     { "Home" = "index.md" },
+    { "User Guide" = [
+        { "Getting Started" = "user-guide/getting-started.md" },
+        { "Installation" = "user-guide/installation.md" },
+        { "Configuration" = "user-guide/configuration.md" },
+        { "First Acquisition" = "user-guide/first-acquisition.md" },
+        { "Using the Controls" = "user-guide/controls.md" },
+        { "Recording and Storage" = "user-guide/recording.md" },
+        { "Experiment Control" = "user-guide/experiment-control.md" },
+        { "Z-Stacks" = "user-guide/z-stacks.md" },
+        { "From EffUSIve to ConfUSIus" = "user-guide/confusius.md" },
+        { "Troubleshooting" = "user-guide/troubleshooting.md" },
+    ]},
     { "Architecture" = [
         { "Overview" = "architecture/overview.md" },
         { "Event Timeline" = "architecture/event-timeline.md" },
@@ -42,24 +55,21 @@ nav = [
         { "CLI" = "api/python/cli.md" },
         { "MATLAB Worker" = "api/python/matlab_worker.md" },
         { "Motor Controller" = "api/python/motor_controller.md" },
+        { "UDP Control" = "api/python/udp_control.md" },
     ]},
+    { "Community" = "contributing.md" },
+    { "Citing" = "citing.md" },
 ]
-
-
-[project.extra.version]
-provider = "mike"
-default = "latest"
-alias = true
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/sdiebolt/effusive"
-name = "Effusive on GitHub"
+name = "EffUSIve on GitHub"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/python"
 link = "https://pypi.org/project/effusive/"
-name = "Effusive on PyPI"
+name = "EffUSIve on PyPI"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/discord"

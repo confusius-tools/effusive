@@ -1,56 +1,77 @@
 ---
-icon: lucide/house
+hide:
+    - navigation
+    - toc
 ---
 
-# Effusive
+<!-- Keep an accessible page heading while the visible wordmark stays unlinked. -->
+<h1 class="sr-only">EffUSIve</h1>
 
-Hybrid Python/MATLAB functional ultrasound imaging (fUSI) acquisition app for the
-[Cortexlab](https://www.ucl.ac.uk/brain-sciences/cortexlab) (UCL). Effusive opens a
-napari control UI, launches a MATLAB worker subprocess, and drives a Verasonics
-Vantage scanner through [EchoFrame](https://github.com/watermarkhu/echoframe), with
-optional experiment control via [mpep](https://github.com/cortex-lab/mpep)-compatible
-UDP messages.
+<div class="hero-banner" markdown>
 
-## Setup
+<p class="hero-title">Ef<span class="fusi-accent">fUSI</span>ve</p>
 
-Set the following environment variables before launch:
+<p class="hero-tagline">Acquisition and control for functional ultrasound imaging on Verasonics Vantage systems.</p>
 
-| Variable | Purpose |
-|---|---|
-| `ECHOFRAME_PATH` | Root of the EchoFrame library |
-| `EFFUSIVE_PATH` | Root of this repository |
-| `VERASONICS_VPF_ROOT` | Root of the Verasonics Vantage install |
+</div>
 
-## Usage
+Use EffUSIve to set up acquisitions, view live B-mode and power Doppler images,
+and record fUSI data from a [napari](https://napari.org/) interface. It builds on
+[EchoFrame](https://github.com/BrainEchoLab/EchoFrame) for beamforming and acquisition.
 
-Launch the napari viewer from the command line (run as administrator on Windows):
+!!! warning "Alpha status"
+    EffUSIve is in alpha and under active development. Use it at your own risk,
+    especially on acquisition hardware. Contact the maintainers before experimenting
+    with it on your system.
 
-```bash
-uv run effusive
-```
+!!! info "Documentation under construction"
+    We're still building these docs. User guides and interface walkthroughs are
+    coming soon. In the meantime, you can browse the architecture and API references.
 
-Then click the play button in the sidebar. Effusive runs MATLAB in an isolated
-subprocess and streams B-mode/PDI frames to napari through session-scoped shared
-memory.
+## Explore EffUSIve
 
-## Features
+<div class="grid cards" markdown>
 
-- Live B-mode and Power Doppler viewing in napari.
-- Runtime controls for freeze, voltage, TX/RX aperture, TGC, SVD, crop, RF snapshots, and recording.
-- BIDS-like storage naming with path previews and disk free-space feedback in the metadata panel.
-- Recording can be started from the UI or by [mpep](https://github.com/cortex-lab/mpep)-compatible UDP triggers.
-- Z-stack acquisition with Zaber motor control and NIfTI export.
+-   [:lucide-rocket:{ .lg .middle } **Getting Started**](user-guide/getting-started.md)
 
-## API Reference
+    ---
 
-- [Sequences](./api/sequences.md) — Acquisition sequence definitions
-- [Probes](./api/probes.md) — Probe configuration
-- [RF Processing](./api/rf.md) — RF data processing
-- [Vantage Control](./api/vantage.md) — Verasonics Vantage interface
-- [UDP Communication](./api/udp.md) — [mpep](https://github.com/cortex-lab/mpep)-compatible experiment control
-- [Utilities](./api/utilities.md) — Logging and z-stack export
-- [Motor Control](./api/motor.md) — Zaber motor interface
+    Set up EffUSIve and prepare for your first acquisition.
 
-## Architecture
+-   [:lucide-app-window:{ .lg .middle } **Using the Controls**](user-guide/controls.md)
 
-- [Overview](./architecture/overview.md) — Runtime relationships between napari, MATLAB, VSX, EchoFrame, and shared memory
+    ---
+
+    Find your way around the viewer and acquisition controls.
+
+-   [:lucide-hard-drive:{ .lg .middle } **Recording and Storage**](user-guide/recording.md)
+
+    ---
+
+    Record your data and organize it with BIDS-like names and metadata.
+
+-   [:lucide-radio:{ .lg .middle } **Experiment Control**](user-guide/experiment-control.md)
+
+    ---
+
+    Trigger recordings from your experiment using mpep-compatible UDP messages.
+
+-   [:lucide-move-3d:{ .lg .middle } **Z-Stacks**](user-guide/z-stacks.md)
+
+    ---
+
+    Acquire a stack of slices with motor control and export it to NIfTI.
+
+-   [:lucide-workflow:{ .lg .middle } **Architecture**](architecture/overview.md)
+
+    ---
+
+    A look behind the scenes at how acquisition and live viewing work.
+
+-   [:lucide-code:{ .lg .middle } **API Reference**](api/index.md)
+
+    ---
+
+    Find the functions and settings you need when working with the code.
+
+</div>

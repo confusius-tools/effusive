@@ -8,7 +8,7 @@ This page describes the Verasonics event loop structure used for power Doppler a
 
 ## Process Function Assignments
 
-Four external process functions are registered in every Effusive sequence via `effusive.sequences.getCommonProcessFunctions`:
+Four external process functions are registered in every EffUSIve sequence via `effusive.sequences.getCommonProcessFunctions`:
 
 | Index | Function | Role |
 |-------|----------|------|

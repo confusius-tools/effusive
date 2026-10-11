@@ -4,14 +4,14 @@ icon: lucide/network
 
 # Architecture Overview
 
-This page describes how Effusive's Python, MATLAB, and Verasonics pieces fit together at runtime.
+This page describes how EffUSIve's Python, MATLAB, and Verasonics pieces fit together at runtime.
 
 ## Main Components
 
 - `effusive` CLI starts napari and launches the MATLAB worker subprocess.
 - The napari widget writes operator commands into a session-scoped shared-memory channel set and reads processed frame data back out.
 - The MATLAB worker configures the Verasonics sequence and the VSX base workspace before calling `VSX`.
-- VSX runs the acquisition/event loop and calls external Effusive process functions each buffer.
+- VSX runs the acquisition/event loop and calls external EffUSIve process functions each buffer.
 - EchoFrame performs beamforming and power Doppler processing inside `processRFEnsembleBlock`.
 
 ## Runtime Data Flow
