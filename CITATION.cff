@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use EffUSIve, please cite it using the metadata from this file."
 type: software
 title: "EffUSIve"
-repository-code: "https://github.com/sdiebolt/effusive"
+repository-code: "https://github.com/confusius-tools/effusive"
 license: GPL-3.0-only
 authors:
   - family-names: "Le Meur-Diebolt"

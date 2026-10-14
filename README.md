@@ -1,6 +1,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/effusive?style=flat-square&color=ffd33d&label=PyPI)](https://pypi.org/project/effusive/)
 [![Python versions](https://img.shields.io/pypi/pyversions/effusive?style=flat-square&color=0099e5&logo=python&logoColor=white)](https://pypi.org/project/effusive/)
-[![License](https://img.shields.io/github/license/sdiebolt/effusive?style=flat-square&color=3ad9a4)](https://github.com/sdiebolt/effusive/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/confusius-tools/effusive?style=flat-square&color=3ad9a4)](https://github.com/confusius-tools/effusive/blob/main/LICENSE)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22555686-8b7ff7?style=flat-square)](https://doi.org/10.5281/zenodo.22555686)
 [![Discord](https://img.shields.io/badge/Discord-join-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/mZd87tgmy2)
 
@@ -20,7 +20,7 @@ beamforming and acquisition.
 
 ## Documentation
 
-The [EffUSIve documentation](https://sdiebolt.github.io/effusive/) is currently being
+The [EffUSIve documentation](https://effusive.tools/) is currently being
 built. Architecture and API references are available; operator guides and interface
 walkthroughs are marked as under construction.
 
@@ -61,5 +61,5 @@ Defaults ship in `src/effusive/default_config.toml`. User settings persist in
 Config covers probe defaults, acquisition settings, storage path,
 simulate mode, z-stack defaults, BIDS-like metadata, and the last crop ROI.
 
-See [the configuration guide](https://sdiebolt.github.io/effusive/user-guide/configuration/)
+See [the configuration guide](https://effusive.tools/user-guide/configuration/)
 for more about system paths and saved settings.

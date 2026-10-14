@@ -1,13 +1,13 @@
 [project]
 site_name = "EffUSIve"
-site_url = "https://sdiebolt.github.io/effusive/"
+site_url = "https://effusive.tools"
 site_description = "Acquisition and control application for functional ultrasound imaging data."
 site_author = "Samuel Le Meur-Diebolt"
 copyright = "Copyright © 2026 The EffUSIve developers"
 docs_dir = "docs"
 site_dir = "site"
-repo_url = "https://github.com/sdiebolt/effusive"
-repo_name = "sdiebolt/effusive"
+repo_url = "https://github.com/confusius-tools/effusive"
+repo_name = "confusius-tools/effusive"
 edit_uri = "edit/main/docs/"
 extra_css = ["stylesheets/extra.css"]
 extra_javascript = [
@@ -63,7 +63,7 @@ nav = [
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/sdiebolt/effusive"
+link = "https://github.com/confusius-tools/effusive"
 name = "EffUSIve on GitHub"
 
 [[project.extra.social]]
